@@ -1,4 +1,5 @@
-Assignments for Scalable Machine Learning  
+Assignments for Scalable Machine Learning
+Detailed descriptions for hw# can be found in hw#.pdf
     
 1) hw1: Alternating Least Squares, Coordinate Descent for Ridge and Lasso Regression (Matlab)   
 2) hw2: Alternating Least Squares (C++ version)    

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/boruvka-merge.dir/BoruvkaMerge.cpp.o  -o boruvka-merge -rdynamic ../../src/libgalois.a -lpthread 

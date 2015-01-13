@@ -1,0 +1,2 @@
+file(COPY /home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/inputs DESTINATION /home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/build/default/inputs PATTERN .svn EXCLUDE
+  PATTERN CMakeLists.txt EXCLUDE)

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/preflowpush.dir/Preflowpush.cpp.o  -o preflowpush -rdynamic ../../src/libgalois.a -lpthread 

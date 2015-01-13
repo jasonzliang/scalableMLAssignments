@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/sparse_mul.dir/sparse_mul.cpp.o  -o sparse_mul -rdynamic ../../src/libgalois.a -lpthread 

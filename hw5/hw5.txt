@@ -1,0 +1,83 @@
+Problem 1:
+a)
+module swap intel gcc/4.7.1
+module load cmake/2.8.9
+module load boost/1.55.0
+cd ~/Desktop/
+wget http://iss.ices.utexas.edu/projects/galois/downloads/Galois-2.2.1.tar.gz
+tar xvzf Galois-2.2.1.tar.gz
+cd Galois-2.2.1/build
+mkdir default
+cd default
+export BOOST_ROOT=/opt/apps/gcc4_7/boost/1.55.0
+cmake -DCMAKE_INSTALL_PREFIX=~/Desktop/galois ../..
+make -j16
+make install
+
+Problem 2:
+a) See submitted code
+
+b) 
+num Threads: 1, average time in seconds for y=A*x over 10 runs: 1.7131
+num Threads: 4, average time in seconds for y=A*x over 10 runs: 0.468
+num Threads: 8, average time in seconds for y=A*x over 10 runs: 0.2518
+num Threads: 16, average time in seconds for y=A*x over 10 runs: 0.1182
+
+Problem 3:
+a) We know that P^T*r = [(1-alpha)*A*D^(-1)]*r + (alpha*1*v^T)*r. 
+
+For (alpha*1*v^T)*r, we only need to compute r_i = alpha*(v^T . r) once. This value is the same for all r_i and performing a dot product operation takes O(n) time. If we assume that r sums to 1 and that v^T = 1/n, then r_i = alpha/n and can be computed in O(1) time. 
+
+Computing D takes O(nnz(A)) time since we are just summing the nonzero elements in each row of A. Computing (1-alpha)*A*D^(-1) also takes O(nnz(A)) time since thats is just computing (1-alpha)*(1/D_jj)*A_ij for all nonzero A_ij. Finally, multiplication by r is also O(nnz(A)) since (1-alpha)*A*D^(-1) is a sparse matrix with nnz(A) non-zero values. 
+
+Finally, adding [(1-alpha)*A*D^(-1)]*r to (alpha*1*v^T)*r takes O(n) time. Thus the overall running time to compute P^T*r is O(nnz(A) + n).
+
+b)
+matlab:
+iter:5 wall time:3.1009
+iter:10 wall time:6.2226
+iter:15 wall time:9.3589
+iter:20 wall time:12.4401
+iter:25 wall time:15.6031
+iter:30 wall time:18.658
+iter:35 wall time:21.7563
+iter:40 wall time:24.8559
+iter:45 wall time:27.9803
+iter:50 wall time:31.0928
+
+galois:
+iter: 5 wall time: 0.702
+iter: 10 wall time: 1.402
+iter: 15 wall time: 2.103
+iter: 20 wall time: 2.804
+iter: 25 wall time: 3.506
+iter: 30 wall time: 4.207
+iter: 35 wall time: 4.908
+iter: 40 wall time: 5.613
+iter: 45 wall time: 6.312
+iter: 50 wall time: 7.014
+
+c)
+matlab:
+rank:1 node:4728 pageRank:0.0001964
+rank:2 node:2265 pageRank:0.0001926
+rank:3 node:238 pageRank:0.00017788
+rank:4 node:7587 pageRank:0.00017726
+rank:5 node:1506 pageRank:0.00017314
+rank:6 node:3655 pageRank:0.00016821
+rank:7 node:8556 pageRank:0.00012449
+rank:8 node:44092 pageRank:0.0001104
+rank:9 node:7100 pageRank:0.00010708
+rank:10 node:7556 pageRank:0.00010655
+
+galois:
+rank: 1 node index (starting from 1): 4728 pageRank: 0.000196396
+rank: 2 node index (starting from 1): 2265 pageRank: 0.000192605
+rank: 3 node index (starting from 1): 238 pageRank: 0.000177875
+rank: 4 node index (starting from 1): 7587 pageRank: 0.000177258
+rank: 5 node index (starting from 1): 1506 pageRank: 0.000173137
+rank: 6 node index (starting from 1): 3655 pageRank: 0.000168211
+rank: 7 node index (starting from 1): 8556 pageRank: 0.000124487
+rank: 8 node index (starting from 1): 44092 pageRank: 0.000110404
+rank: 9 node index (starting from 1): 7100 pageRank: 0.000107078
+rank: 10 node index (starting from 1): 7556 pageRank: 0.000106554

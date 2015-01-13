@@ -1,0 +1,4 @@
+The python files in the problem1 folder are the mapreduce files used to generate the tf-idf files for classic90 and classic3893. The order of jobs is word_freq -> word_count -> word_freq_corpus. Use the shell script to start the hadoop jobs.
+
+The python files in webspam_train/webspam_test are for computing td-idf for the train/test folders in webspam, and the order of jobs is word_freq -> word_count -> word_freq_corpus -> format_ouput. Use the shell script to start hadoop jobs.
+

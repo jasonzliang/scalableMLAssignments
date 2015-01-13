@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/KruskalOrdered.dir/KruskalOrdered.cpp.o  -o KruskalOrdered -rdynamic ../../src/libgalois.a -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/pta.dir/PointsTo.cpp.o  -o pta -rdynamic ../../src/libgalois.a -lpthread 

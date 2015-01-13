@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/clustering.dir/Clustering.cpp.o  -o clustering -rdynamic ../../src/libgalois.a -lpthread 

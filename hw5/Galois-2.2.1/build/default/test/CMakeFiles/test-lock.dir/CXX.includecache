@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/SimpleLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+cassert
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/lock.cpp
+Galois/Runtime/ll/SimpleLock.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Runtime/ll/SimpleLock.h
+
+include/Galois/config.h
+

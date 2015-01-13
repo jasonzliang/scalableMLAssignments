@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/independentset.dir/IndependentSet.cpp.o  -o independentset -rdynamic ../../src/libgalois.a -lpthread 

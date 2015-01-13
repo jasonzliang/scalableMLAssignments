@@ -1,0 +1,124 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/Runtime/ll/CacheLineStorage.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/EnvCheck.h
+
+../../include/Galois/Runtime/ll/HWTopo.h
+
+../../include/Galois/Runtime/ll/PaddedLock.h
+SimpleLock.h
+../../include/Galois/Runtime/ll/SimpleLock.h
+CacheLineStorage.h
+../../include/Galois/Runtime/ll/CacheLineStorage.h
+
+../../include/Galois/Runtime/ll/SimpleLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+cassert
+-
+
+../../include/Galois/Runtime/ll/TID.h
+
+../../include/Galois/Runtime/ll/gio.h
+sstream
+-
+cerrno
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/EnvCheck.cpp
+Galois/Runtime/ll/EnvCheck.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/EnvCheck.h
+cstdlib
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/HWTopo.cpp
+Galois/Runtime/ll/HWTopo.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/HWTopo.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/HWTopoLinux.cpp
+Galois/Runtime/ll/HWTopo.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/HWTopo.h
+Galois/Runtime/ll/EnvCheck.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/EnvCheck.h
+Galois/Runtime/ll/gio.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/gio.h
+vector
+-
+functional
+-
+algorithm
+-
+cassert
+-
+cstdio
+-
+cstring
+-
+cerrno
+-
+sched.h
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/SimpleLock.cpp
+Galois/Runtime/ll/SimpleLock.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/SimpleLock.h
+Galois/Runtime/ll/PaddedLock.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/PaddedLock.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/TID.cpp
+Galois/Runtime/ll/TID.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/TID.h
+Galois/Runtime/ll/HWTopo.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/HWTopo.h
+cassert
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/gIO.cpp
+Galois/config.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/config.h
+Galois/Runtime/ll/gio.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/gio.h
+Galois/Runtime/ll/SimpleLock.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/SimpleLock.h
+Galois/Runtime/ll/TID.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/TID.h
+Galois/Runtime/ll/EnvCheck.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/ll/Galois/Runtime/ll/EnvCheck.h
+cstdlib
+-
+cstdio
+-
+ctime
+-
+cstring
+-
+cstdarg
+-
+cerrno
+-
+unistd.h
+-
+iostream
+-
+fstream
+-
+iomanip
+-
+
+include/Galois/config.h
+

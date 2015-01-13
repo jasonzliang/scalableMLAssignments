@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-acquire.dir/acquire.cpp.o  -o test-acquire -rdynamic ../src/libgalois.a -lpthread 

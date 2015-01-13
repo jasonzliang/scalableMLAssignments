@@ -1,0 +1,91 @@
+=================================================
+Problem 1:
+=================================================
+
+a) See ALS.m
+
+b) The problem with using lambda=0 is that it causes the matrix, which is part of the calculations for solving ridge regression analytically, to become singular or close to singular:
+
+(X^T)*(X) + lambda * I = (X^T)*(X) 
+
+This is a result of us trying to solve an underdetermined system of equations. Thus, trying to invert this matrix would cause numerical stability issues.
+
+c) Here are the values for lambda and average RMSE calculated through 10-fold cross validation on the small training data set. The number of iterations of ALS is 10, and rank k is 10:
+lambda:1000 rmse:3.7528
+lambda:100 rmse:1.9502
+lambda:10 rmse:1.1096
+lambda:1 rmse:1.1376
+lambda:0.1 rmse:1.249
+lambda:0.01 rmse:1.5461
+lambda:0.001 rmse:2.0917
+lambda:0.0001 rmse:2.9688
+Optimal lambda value:10
+
+Here are the results with using the optimal lambda value on the small test data set:
+Small test data set rmse:1.1522
+Elapsed time is 1.768608 seconds
+
+d)
+Medium training data set:
+lambda:1000 rmse:3.0322
+lambda:100 rmse:1.1679
+lambda:10 rmse:0.86048
+lambda:1 rmse:0.87921
+lambda:0.1 rmse:0.92025
+lambda:0.01 rmse:0.97885
+lambda:0.001 rmse:1.0503
+Optimal lambda value:10
+
+Medium test data set:
+Medium test data set rmse:0.95819
+Elapsed time is 4.010847 seconds
+
+Large training data set:
+Cross-validation took too long to finish, so I used lambda=10
+
+Large test data set:
+Large test data set rmse:0.56061
+Elapsed time is 984.245234 seconds
+
+=================================================
+Problem 2:
+=================================================
+
+a)cd_ridge is run with a learning rate of 0.005.
+
+training data set:
+lambda:10 rmse:1.2298
+lambda:1 rmse:1.5184
+lambda:0.1 rmse:1.5998
+
+testing data set:
+lambda:10 rmse:1.2021
+lambda:1 rmse:1.4705
+lambda:0.1 rmse:1.559
+
+b)
+training data set:
+lambda:10 rmse:1.0568
+lambda:1 rmse:1.0568
+lambda:0.1 rmse:0.47448
+
+testing data set:
+lambda:10 rmse:1.0518
+lambda:1 rmse:1.0518
+lambda:0.1 rmse:0.47758
+
+c)cd_ridge is run with a learning rate of 0.005 and for 5 iterations.
+
+Small test data set with lambda=10:
+Small test data set rmse:3.7674
+Elapsed time is 66.318182 seconds
+
+Medium test data set with lambda=10:
+Medium test data set rmse:3.751
+Elapsed time is 131.869190 seconds
+
+Large data set:
+Took too long to finish.
+
+Compared to the backslash operator, using coordinate descent results in both longer running time and larger RMSE values. This is probably because coordinate descent requires multiple iterations to solve the system of equations, while the closed form solution solves it in one step. 
+

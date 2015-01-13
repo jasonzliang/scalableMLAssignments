@@ -1,0 +1,30 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+CFLAGS	Makefile	/^CFLAGS = -O3 -fopenmp $/;"	m
+EXE	Makefile	/^EXE = hw4$/;"	m
+INC	Makefile	/^INC=-I.\/$/;"	m
+createMatrix	genMat.py	/^def createMatrix(n=500, outfile='data\/small_mat.txt', t=0.1):$/;"	f
+readMatrix	genMat.py	/^def readMatrix(n=500, infile='data\/small_mat.txt'):$/;"	f
+reformat	genMat.py	/^def reformat(infile='data.txt', outfile='data2.txt'):$/;"	f
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+main	problem.cpp	/^int main(int argc, char **argv)$/;"	f
+PROBLEM	problem.h	2;"	d
+multiply	sparse_matrix.cpp	/^void sparseMatrix::multiply(double *v, double *y)$/;"	f	class:sparseMatrix
+readMetafile	sparse_matrix.cpp	/^void sparseMatrix::readMetafile(char *metaFile)$/;"	f	class:sparseMatrix
+sparseMatrix	sparse_matrix.cpp	/^sparseMatrix::sparseMatrix(char *dataFile, char *metaFile)$/;"	f	class:sparseMatrix
+~sparseMatrix	sparse_matrix.cpp	/^sparseMatrix::~sparseMatrix()$/;"	f	class:sparseMatrix
+SPARSE_MATRIX	sparse_matrix.h	2;"	d
+col_indices	sparse_matrix.h	/^  int *col_indices;$/;"	m	class:sparseMatrix
+getNumCols	sparse_matrix.h	/^  inline int getNumCols() {$/;"	f	class:sparseMatrix
+getNumEntries	sparse_matrix.h	/^  inline int getNumEntries()$/;"	f	class:sparseMatrix
+getNumRows	sparse_matrix.h	/^  inline int getNumRows() {$/;"	f	class:sparseMatrix
+nCols	sparse_matrix.h	/^  int nRows, nCols, numEntries;$/;"	m	class:sparseMatrix
+nRows	sparse_matrix.h	/^  int nRows, nCols, numEntries;$/;"	m	class:sparseMatrix
+numEntries	sparse_matrix.h	/^  int nRows, nCols, numEntries;$/;"	m	class:sparseMatrix
+row_length	sparse_matrix.h	/^  int *row_length;$/;"	m	class:sparseMatrix
+row_start_pos	sparse_matrix.h	/^  int *row_start_pos;$/;"	m	class:sparseMatrix
+sparseMatrix	sparse_matrix.h	/^class sparseMatrix$/;"	c
+values	sparse_matrix.h	/^  double *values;$/;"	m	class:sparseMatrix

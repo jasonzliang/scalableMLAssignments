@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/MethodFlags.h
+
+../../include/Galois/Runtime/Context.h
+Galois/config.h
+../../include/Galois/Runtime/Galois/config.h
+Galois/MethodFlags.h
+../../include/Galois/Runtime/Galois/MethodFlags.h
+Galois/Runtime/ll/PtrLock.h
+../../include/Galois/Runtime/Galois/Runtime/ll/PtrLock.h
+Galois/Runtime/ll/gio.h
+../../include/Galois/Runtime/Galois/Runtime/ll/gio.h
+boost/utility.hpp
+-
+cassert
+-
+cstdlib
+-
+setjmp.h
+-
+
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/PtrLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+stdint.h
+-
+cassert
+-
+
+../../include/Galois/Runtime/ll/gio.h
+sstream
+-
+cerrno
+-
+
+../../include/Galois/Timer.h
+Galois/config.h
+../../include/Galois/Galois/config.h
+chrono
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/acquire.cpp
+Galois/Timer.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Timer.h
+Galois/Runtime/Context.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Runtime/Context.h
+iostream
+-
+
+include/Galois/config.h
+

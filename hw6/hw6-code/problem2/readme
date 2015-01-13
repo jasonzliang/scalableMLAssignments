@@ -1,0 +1,5 @@
+run the following:
+
+[C, a1, C2, a2, X, labels, indices] = gen_confusion_matrix(file)
+
+while file is either 'classi90' or 'classic3893'

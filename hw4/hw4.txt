@@ -1,0 +1,230 @@
+=================Problem 2======================
+a)See submitted source code
+
+b)
+nThreads: 1, y=A*x time (avg over 10 runs): 0.504333
+nThreads: 4, y=A*x time (avg over 10 runs): 0.140286
+nThreads: 8, y=A*x time (avg over 10 runs): 0.0749121
+nThreads: 16, y=A*x time (avg over 10 runs): 0.0494503
+
+=================Problem 3======================
+1)
+matlab:
+
+iter:1 wall time:0.65021 lambda:408.7099
+iter:2 wall time:1.2692 lambda:558.4853
+iter:3 wall time:1.9043 lambda:604.6463
+iter:4 wall time:2.5204 lambda:622.4083
+iter:5 wall time:3.149 lambda:630.7601
+iter:6 wall time:3.7623 lambda:635.2483
+iter:7 wall time:4.383 lambda:637.8753
+iter:8 wall time:5.0107 lambda:639.5105
+iter:9 wall time:5.6308 lambda:640.5901
+iter:10 wall time:6.2427 lambda:641.3536
+iter:11 wall time:6.8635 lambda:641.9393
+iter:12 wall time:7.4785 lambda:642.4286
+iter:13 wall time:8.0976 lambda:642.8698
+iter:14 wall time:8.7112 lambda:643.2919
+iter:15 wall time:9.3376 lambda:643.7122
+iter:16 wall time:9.9558 lambda:644.1411
+iter:17 wall time:10.5795 lambda:644.5848
+iter:18 wall time:11.1975 lambda:645.047
+iter:19 wall time:11.8211 lambda:645.5296
+iter:20 wall time:12.4373 lambda:646.0335
+iter:21 wall time:13.0572 lambda:646.5591
+iter:22 wall time:13.6671 lambda:647.1061
+iter:23 wall time:14.2837 lambda:647.6736
+iter:24 wall time:14.8983 lambda:648.2606
+iter:25 wall time:15.5143 lambda:648.8657
+iter:26 wall time:16.1237 lambda:649.4872
+iter:27 wall time:16.742 lambda:650.1231
+iter:28 wall time:17.3608 lambda:650.7714
+iter:29 wall time:17.9806 lambda:651.4296
+iter:30 wall time:18.6017 lambda:652.0951
+iter:31 wall time:19.2701 lambda:652.7654
+iter:32 wall time:19.8992 lambda:653.4377
+iter:33 wall time:20.5431 lambda:654.1093
+iter:34 wall time:21.1615 lambda:654.7774
+iter:35 wall time:21.7739 lambda:655.4392
+iter:36 wall time:22.3858 lambda:656.0923
+iter:37 wall time:23.0129 lambda:656.7342
+iter:38 wall time:23.6254 lambda:657.3625
+iter:39 wall time:24.2425 lambda:657.9753
+iter:40 wall time:24.8553 lambda:658.5706
+iter:41 wall time:25.4894 lambda:659.1468
+iter:42 wall time:26.099 lambda:659.7027
+iter:43 wall time:26.7245 lambda:660.237
+iter:44 wall time:27.3331 lambda:660.749
+iter:45 wall time:27.9524 lambda:661.238
+iter:46 wall time:28.5622 lambda:661.7038
+iter:47 wall time:29.1702 lambda:662.146
+iter:48 wall time:29.7979 lambda:662.5648
+iter:49 wall time:30.41 lambda:662.9605
+iter:50 wall time:31.0172 lambda:663.3333
+
+c++:
+
+iter: 1 wall time: 0.0572021 lambda: 408.71
+iter: 2 wall time: 0.118885 lambda: 558.485
+iter: 3 wall time: 0.176494 lambda: 604.646
+iter: 4 wall time: 0.231301 lambda: 622.408
+iter: 5 wall time: 0.290868 lambda: 630.76
+iter: 6 wall time: 0.347007 lambda: 635.248
+iter: 7 wall time: 0.410581 lambda: 637.875
+iter: 8 wall time: 0.471273 lambda: 639.511
+iter: 9 wall time: 0.527567 lambda: 640.59
+iter: 10 wall time: 0.587034 lambda: 641.354
+iter: 11 wall time: 0.643382 lambda: 641.939
+iter: 12 wall time: 0.698055 lambda: 642.429
+iter: 13 wall time: 0.754528 lambda: 642.87
+iter: 14 wall time: 0.809192 lambda: 643.292
+iter: 15 wall time: 0.865561 lambda: 643.712
+iter: 16 wall time: 0.921829 lambda: 644.141
+iter: 17 wall time: 0.980093 lambda: 644.585
+iter: 18 wall time: 1.03473 lambda: 645.047
+iter: 19 wall time: 1.09266 lambda: 645.53
+iter: 20 wall time: 1.14735 lambda: 646.034
+iter: 21 wall time: 1.21225 lambda: 646.559
+iter: 22 wall time: 1.26707 lambda: 647.106
+iter: 23 wall time: 1.32539 lambda: 647.674
+iter: 24 wall time: 1.38009 lambda: 648.261
+iter: 25 wall time: 1.43771 lambda: 648.866
+iter: 26 wall time: 1.49343 lambda: 649.487
+iter: 27 wall time: 1.55541 lambda: 650.123
+iter: 28 wall time: 1.62013 lambda: 650.771
+iter: 29 wall time: 1.67642 lambda: 651.43
+iter: 30 wall time: 1.73183 lambda: 652.095
+iter: 31 wall time: 1.789 lambda: 652.765
+iter: 32 wall time: 1.8452 lambda: 653.438
+iter: 33 wall time: 1.90601 lambda: 654.109
+iter: 34 wall time: 1.96078 lambda: 654.777
+iter: 35 wall time: 2.01705 lambda: 655.439
+iter: 36 wall time: 2.07182 lambda: 656.092
+iter: 37 wall time: 2.12811 lambda: 656.734
+iter: 38 wall time: 2.1828 lambda: 657.363
+iter: 39 wall time: 2.24016 lambda: 657.975
+iter: 40 wall time: 2.295 lambda: 658.571
+iter: 41 wall time: 2.35116 lambda: 659.147
+iter: 42 wall time: 2.40781 lambda: 659.703
+iter: 43 wall time: 2.46414 lambda: 660.237
+iter: 44 wall time: 2.51903 lambda: 660.749
+iter: 45 wall time: 2.57542 lambda: 661.238
+iter: 46 wall time: 2.63007 lambda: 661.704
+iter: 47 wall time: 2.68768 lambda: 662.146
+iter: 48 wall time: 2.75344 lambda: 662.565
+iter: 49 wall time: 2.8098 lambda: 662.96
+iter: 50 wall time: 2.86451 lambda: 663.333
+
+2)
+(A*x . x) / (x . x)
+= (l*x . x) / (x . x)
+= l*(x . x) / (x . x)
+= l
+
+where "l" is lambda, "." is dot product operator
+
+Since ||x|| = 1, it follows that x . x = ||x|| * ||x|| = 1. Thus we can just do the following to compute l:
+
+l = A*x . x
+
+3)
+rank: 1 node index: 17633 centrality: 0.0488542
+rank: 2 node index: 17595 centrality: 0.0486819
+rank: 3 node index: 17601 centrality: 0.047625
+rank: 4 node index: 17615 centrality: 0.0469425
+rank: 5 node index: 17609 centrality: 0.0468492
+rank: 6 node index: 17778 centrality: 0.0468293
+rank: 7 node index: 17704 centrality: 0.0466097
+rank: 8 node index: 17594 centrality: 0.046431
+rank: 9 node index: 17584 centrality: 0.0460553
+rank: 10 node index: 17614 centrality: 0.0455321
+rank: 11 node index: 17646 centrality: 0.0455303
+rank: 12 node index: 17830 centrality: 0.045328
+rank: 13 node index: 17581 centrality: 0.0451963
+rank: 14 node index: 17630 centrality: 0.0447894
+rank: 15 node index: 17759 centrality: 0.0447456
+rank: 16 node index: 17576 centrality: 0.0446505
+rank: 17 node index: 17617 centrality: 0.0443304
+rank: 18 node index: 17696 centrality: 0.0442925
+rank: 19 node index: 17657 centrality: 0.0442518
+rank: 20 node index: 17702 centrality: 0.0442379
+rank: 21 node index: 17618 centrality: 0.0441131
+rank: 22 node index: 68821 centrality: 0.0440103
+rank: 23 node index: 17605 centrality: 0.0437767
+rank: 24 node index: 17580 centrality: 0.0433254
+rank: 25 node index: 17645 centrality: 0.0429658
+rank: 26 node index: 17592 centrality: 0.0427249
+rank: 27 node index: 17608 centrality: 0.0425955
+rank: 28 node index: 17661 centrality: 0.0425694
+rank: 29 node index: 17795 centrality: 0.0425183
+rank: 30 node index: 17571 centrality: 0.0424322
+rank: 31 node index: 17590 centrality: 0.0422905
+rank: 32 node index: 17679 centrality: 0.0421886
+rank: 33 node index: 17626 centrality: 0.0419445
+rank: 34 node index: 17658 centrality: 0.0416049
+rank: 35 node index: 1515011 centrality: 0.0414123
+rank: 36 node index: 17620 centrality: 0.0413026
+rank: 37 node index: 17597 centrality: 0.0412695
+rank: 38 node index: 17577 centrality: 0.0412015
+rank: 39 node index: 17573 centrality: 0.0404011
+rank: 40 node index: 17634 centrality: 0.0403767
+rank: 41 node index: 17598 centrality: 0.0403625
+rank: 42 node index: 1363531 centrality: 0.0401419
+rank: 43 node index: 17659 centrality: 0.0400949
+rank: 44 node index: 17643 centrality: 0.0400947
+rank: 45 node index: 17688 centrality: 0.0399539
+rank: 46 node index: 1418208 centrality: 0.0397109
+rank: 47 node index: 904682 centrality: 0.0396751
+rank: 48 node index: 17723 centrality: 0.039564
+rank: 49 node index: 1488542 centrality: 0.0394357
+rank: 50 node index: 545288 centrality: 0.0392412
+rank: 51 node index: 1220957 centrality: 0.039134
+rank: 52 node index: 1374950 centrality: 0.0390165
+rank: 53 node index: 17705 centrality: 0.0387598
+rank: 54 node index: 1516649 centrality: 0.0386455
+rank: 55 node index: 17638 centrality: 0.0385973
+rank: 56 node index: 17636 centrality: 0.0385925
+rank: 57 node index: 17892 centrality: 0.0385591
+rank: 58 node index: 17593 centrality: 0.038453
+rank: 59 node index: 17591 centrality: 0.0383989
+rank: 60 node index: 17773 centrality: 0.0382077
+rank: 61 node index: 17589 centrality: 0.0380663
+rank: 62 node index: 17575 centrality: 0.0379598
+rank: 63 node index: 17668 centrality: 0.0379474
+rank: 64 node index: 1177529 centrality: 0.0379221
+rank: 65 node index: 17738 centrality: 0.0379131
+rank: 66 node index: 17677 centrality: 0.0378527
+rank: 67 node index: 17561 centrality: 0.0377912
+rank: 68 node index: 17794 centrality: 0.0377444
+rank: 69 node index: 17764 centrality: 0.0377381
+rank: 70 node index: 17676 centrality: 0.0377343
+rank: 71 node index: 17765 centrality: 0.0377117
+rank: 72 node index: 17816 centrality: 0.0376842
+rank: 73 node index: 1418547 centrality: 0.0376532
+rank: 74 node index: 17792 centrality: 0.0376305
+rank: 75 node index: 17716 centrality: 0.03763
+rank: 76 node index: 17713 centrality: 0.0375304
+rank: 77 node index: 17719 centrality: 0.0375131
+rank: 78 node index: 17864 centrality: 0.0373709
+rank: 79 node index: 17683 centrality: 0.0373199
+rank: 80 node index: 17682 centrality: 0.0372295
+rank: 81 node index: 1363910 centrality: 0.0371459
+rank: 82 node index: 1161723 centrality: 0.0370809
+rank: 83 node index: 17586 centrality: 0.0370659
+rank: 84 node index: 17757 centrality: 0.0370063
+rank: 85 node index: 1217995 centrality: 0.0368368
+rank: 86 node index: 17901 centrality: 0.0367685
+rank: 87 node index: 17739 centrality: 0.0367634
+rank: 88 node index: 17604 centrality: 0.0367558
+rank: 89 node index: 17587 centrality: 0.0366413
+rank: 90 node index: 17832 centrality: 0.0364901
+rank: 91 node index: 17791 centrality: 0.0364273
+rank: 92 node index: 17767 centrality: 0.0363907
+rank: 93 node index: 1467532 centrality: 0.0363673
+rank: 94 node index: 68902 centrality: 0.0363293
+rank: 95 node index: 18020 centrality: 0.0361804
+rank: 96 node index: 1492396 centrality: 0.0361369
+rank: 97 node index: 180034 centrality: 0.0360847
+rank: 98 node index: 17822 centrality: 0.0360214
+rank: 99 node index: 17730 centrality: 0.0360062
+rank: 100 node index: 17817 centrality: 0.035959

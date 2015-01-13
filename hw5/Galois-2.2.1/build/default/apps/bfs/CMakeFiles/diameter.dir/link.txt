@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/diameter.dir/Diameter.cpp.o  -o diameter -rdynamic ../../src/libgalois.a -lpthread 

@@ -1,0 +1,168 @@
+*****************************Problem 1*****************************
+For my implementation of PageRank with C++/OpenMP, see problem1.cpp and sparse_matrix.cpp
+
+Running Times for 100 Iterations of PageRank:
+
+	a)C++ & OpenMP
+
+	Friendster:
+		1 thread-677.072 seconds
+		8 threads-92.277 seconds
+		16 threads-53.9832 seconds
+ 
+	Livejournal:
+		1 thread-44.995 seconds
+		8 threads-6.29662 seconds
+		16 threads-3.57195 seconds
+
+	comments:
+	My native implementation is the fastest by far. I parallelized the sparse matrix multiply of P^T * x. Performance scales almost linearly with number of cores.
+
+	b)Galois
+
+	Friendster:
+		1 thread-1642.28 seconds
+		8 threads-269.734 seconds
+		16 threads-133.513 seconds
+
+	Livejournal:
+		1 thread-179.212 seconds
+		8 threads-29.419 seconds
+		16 threads-14.057 seconds
+
+	comments:
+	This is the second fastest PageRank program, but it is roughly 3-4x slower than my version. The sparse matrix graph, while fast, is not as optimized my native C++ data structures for sparse matrices.
+	
+	c)Graphlab
+
+	Friendster:
+		1 thread-1204 seconds
+		8 threads-685.9 seconds
+		16 threads-434.8 seconds
+
+	Livejournal:
+		1 thread-38.4 seconds
+		8 threads-76.1 seconds
+		16 threads-49.4 seconds
+
+	comments:
+	Significantly faster with delta caching turned on. The single thread performance is faster than Galois, but the performance with 8 and 16 threads becomes slower, which indicates scalability issues. The Livejournal dataset doesn't show improvements in performance with number of threads (1 thread fastest); this is probably due to its relatively small size and overhead of setting up parallelization in graphlab.
+
+	d)Mahout
+
+	Friendster-232.598 minutes
+
+	Livejournal-59.166 minutes
+
+	comments:
+	This is much slower than the single node PageRank programs, probably because of the fact that map-reduce is a distributed framework. Network bandwidth is far lower than memory bandwidth on a single node and is a bottleneck. Furthermore, it seems like the first two iterations take much longer than the rest of the iterations. The distributed framework seems to allow the runtime to scale super-linearly with the size of the input data file. 
+
+	e)Spark
+
+	Friendster-10 hours+
+
+	Livejournal-81.8 minutes
+
+	comments:
+	Livejournal is slightly slower than mahout; this relatively slow performance is because it is depending on the hadoop/map-reduce framework. Friendster is significantly slower on Spark, perhaps due to the large datasize and an inefficient implementation of PageRank. I believe spark could be faster with better tuned settings such as number of executors.
+
+*****************************Problem 2*****************************
+
+a) Install instructions.
+mahout:
+git clone https://github.com/apache/mahout
+cd mahout
+mvn clean install -Dhadoop2 -Dhadoop2.version=2.3.0 -DskipTests=true
+
+spark:
+git clone https://github.com/apache/spark
+cd spark
+mvn -Pyarn -Phadoop-2.3 -Dhadoop.version=2.3.0 -DskipTests clean package
+
+NOTE: There is an error with mahout als that everyone is getting, where a "ConnectException" occurs at the end of the job, so I will list results for spark instead.
+
+b) Best lambda values (chosen from 0.1, 1, and 10 and determined via cross-validation).
+Spark:
+	Movielens:
+		k=10: 0.1
+		k=100: 0.1
+
+	Netflix:
+		k=10: 0.1
+		k=100: 0.1
+
+c) Runtimes (using best lambda value).
+Spark:
+
+	Movielens:
+	(note: these runtimes are with 4 executors and is actually faster than using 128, probably due to the small size of the data)
+		k=10: 303 seconds
+		k=100: 329 seconds
+
+	Netflix:
+	(note: these runtimes are with 128 executors)
+		k=10: 377 seconds
+		k=100: 732 seconds
+
+d) RMSE (using best lambda value).
+Spark:
+	Movielens:
+		k=10: 1.634
+		k=100: 1.578
+
+	Netflix:
+		k=10: 1.055
+		k=100: 0.938
+
+*****************************Problem 3*****************************
+
+a) See the functions "objectiveError" (computes f(w)) and "computeGradient_d_ii" (computes gradient of f(w)) in sparse_matrix.cpp
+
+b) Let hessian matrix be A = I + C*(X^T)*D*X, then to efficiently compute A*v where v is an arbitrary vector, you do the following:
+
+A*v = v + C * ((X^T) * (D * (X * v)))
+
+The operations done in the order determined by the parenthesis are 3 sparse matrix-vector multiplications, a scalar-vector multiplication, and a vector addition. Thus, the time it takes to compute A*v is O(nnz(A)).
+
+c) See function "conjugateGradient" in problem3.cpp
+
+d-e) See function "solveLogisticRegression" in problem3.cpp
+
+1 Thread, speedup: 1.00
+outer iteration: 0 walltime: 0 error: 469537 test accuracy: 0.486069 (9839/20242)
+outer iteration: 1 walltime: 6.57021 obj error: 141582 test accuracy: 0.974261 (19721/20242)
+outer iteration: 2 walltime: 12.9344 obj error: 84253.7 test accuracy: 0.976139 (19759/20242)
+outer iteration: 3 walltime: 18.3628 obj error: 64705.5 test accuracy: 0.976633 (19769/20242)
+outer iteration: 4 walltime: 24.0213 obj error: 58677.6 test accuracy: 0.97688 (19774/20242)
+outer iteration: 5 walltime: 29.4458 obj error: 57513.8 test accuracy: 0.976238 (19761/20242)
+outer iteration: 6 walltime: 34.8719 obj error: 57402.9 test accuracy: 0.976139 (19759/20242)
+outer iteration: 7 walltime: 40.529 obj error: 57396.3 test accuracy: 0.97604 (19757/20242)
+outer iteration: 8 walltime: 46.186 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+outer iteration: 9 walltime: 52.0761 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+outer iteration: 10 walltime: 59.5974 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+
+8 Threads, speedup: 4.95
+outer iteration: 0 walltime: 0 error: 469537 test accuracy: 0.486069 (9839/20242)
+outer iteration: 1 walltime: 1.31784 obj error: 141581 test accuracy: 0.974261 (19721/20242)
+outer iteration: 2 walltime: 2.59274 obj error: 84265.9 test accuracy: 0.976139 (19759/20242)
+outer iteration: 3 walltime: 3.70111 obj error: 64710.4 test accuracy: 0.976633 (19769/20242)
+outer iteration: 4 walltime: 4.85073 obj error: 58679.3 test accuracy: 0.97688 (19774/20242)
+outer iteration: 5 walltime: 5.95854 obj error: 57514.2 test accuracy: 0.976238 (19761/20242)
+outer iteration: 6 walltime: 7.0661 obj error: 57402.9 test accuracy: 0.976139 (19759/20242)
+outer iteration: 7 walltime: 8.21553 obj error: 57396.3 test accuracy: 0.97604 (19757/20242)
+outer iteration: 8 walltime: 9.36421 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+outer iteration: 9 walltime: 10.5548 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+outer iteration: 10 walltime: 12.0367 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+
+16 Threads, speedup: 6.94
+outer iteration: 0 walltime: 0 error: 469537 test accuracy: 0.486069 (9839/20242)
+outer iteration: 1 walltime: 1.13228 obj error: 141582 test accuracy: 0.974261 (19721/20242)
+outer iteration: 2 walltime: 2.02015 obj error: 84205.7 test accuracy: 0.976139 (19759/20242)
+outer iteration: 3 walltime: 2.78889 obj error: 64686.6 test accuracy: 0.976682 (19770/20242)
+outer iteration: 4 walltime: 3.58758 obj error: 58671.2 test accuracy: 0.97688 (19774/20242)
+outer iteration: 5 walltime: 4.35645 obj error: 57512.3 test accuracy: 0.976238 (19761/20242)
+outer iteration: 6 walltime: 5.12527 obj error: 57402.7 test accuracy: 0.976139 (19759/20242)
+outer iteration: 7 walltime: 5.92379 obj error: 57396.3 test accuracy: 0.97604 (19757/20242)
+outer iteration: 8 walltime: 6.72189 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+outer iteration: 9 walltime: 7.55003 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)
+outer iteration: 10 walltime: 8.5877 obj error: 57396.2 test accuracy: 0.97604 (19757/20242)

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/Runtime/ll/gio.h
+sstream
+-
+cerrno
+-
+
+../../include/Galois/TwoLevelIteratorA.h
+Galois/config.h
+../../include/Galois/Galois/config.h
+Galois/Runtime/ll/gio.h
+../../include/Galois/Galois/Runtime/ll/gio.h
+boost/iterator/iterator_adaptor.hpp
+-
+cassert
+-
+iterator
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/twoleveliteratora.cpp
+Galois/config.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/config.h
+Galois/TwoLevelIteratorA.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/TwoLevelIteratorA.h
+Galois/Runtime/ll/gio.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Runtime/ll/gio.h
+algorithm
+-
+boost/iterator/counting_iterator.hpp
+-
+list
+-
+iostream
+-
+
+include/Galois/config.h
+

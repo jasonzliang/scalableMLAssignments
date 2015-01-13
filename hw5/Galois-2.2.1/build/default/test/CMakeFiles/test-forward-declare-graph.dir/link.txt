@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-forward-declare-graph.dir/forward-declare-graph.cpp.o  -o test-forward-declare-graph -rdynamic ../src/libgalois.a -lpthread 

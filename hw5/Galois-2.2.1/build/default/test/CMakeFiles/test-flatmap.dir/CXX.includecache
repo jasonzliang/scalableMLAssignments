@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/FlatMap.h
+Galois/config.h
+../../include/Galois/Galois/config.h
+stdexcept
+-
+
+../../include/Galois/Timer.h
+Galois/config.h
+../../include/Galois/Galois/config.h
+chrono
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/flatmap.cpp
+Galois/FlatMap.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/FlatMap.h
+Galois/Timer.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Timer.h
+iostream
+-
+map
+-
+
+include/Galois/config.h
+

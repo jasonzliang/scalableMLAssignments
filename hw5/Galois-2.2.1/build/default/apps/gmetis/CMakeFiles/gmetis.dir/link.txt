@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/gmetis.dir/GMetis.cpp.o CMakeFiles/gmetis.dir/Coarsening.cpp.o CMakeFiles/gmetis.dir/Metric.cpp.o CMakeFiles/gmetis.dir/Refine.cpp.o CMakeFiles/gmetis.dir/Partitioning.cpp.o  -o gmetis -rdynamic ../../src/libgalois.a -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/AVIodgExplicit.dir/main/AVIodgExplicit.cpp.o  -o AVIodgExplicit -rdynamic libAVI.a -llapack /usr/lib/libf77blas.so.3gf /usr/lib/libatlas.so.3gf ../../src/libgalois.a -lz -lboost_system -lboost_iostreams -lboost_filesystem -lpthread -lgfortran -lquadmath 

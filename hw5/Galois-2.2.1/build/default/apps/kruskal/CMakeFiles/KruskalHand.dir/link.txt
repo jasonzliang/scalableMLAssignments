@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/KruskalHand.dir/KruskalHand.cpp.o  -o KruskalHand -rdynamic ../../src/libgalois.a -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/DESordered.dir/ordered/DESordered.cpp.o CMakeFiles/DESordered.dir/common/comDefs.cpp.o CMakeFiles/DESordered.dir/logic/LogicGate.cpp.o CMakeFiles/DESordered.dir/logic/BasicPort.cpp.o CMakeFiles/DESordered.dir/logic/NetlistParser.cpp.o  -o DESordered -rdynamic ../../src/libgalois.a -lpthread 

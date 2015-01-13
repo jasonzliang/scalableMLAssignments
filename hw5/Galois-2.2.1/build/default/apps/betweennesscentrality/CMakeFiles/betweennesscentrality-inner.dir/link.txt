@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/betweennesscentrality-inner.dir/BetweennessCentralityInner.cpp.o  -o betweennesscentrality-inner -rdynamic ../../src/libgalois.a -lpthread 

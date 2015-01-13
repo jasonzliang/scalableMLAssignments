@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-worklists-compile.dir/worklists-compile.cpp.o  -o test-worklists-compile -rdynamic ../src/libgalois.a -lpthread 

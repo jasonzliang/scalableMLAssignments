@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -ffast-math -O3 -DNDEBUG    CMakeFiles/delaunaytriangulation-det.dir/DelaunayTriangulationDet.cpp.o CMakeFiles/delaunaytriangulation-det.dir/Element.cpp.o  -o delaunaytriangulation-det -rdynamic ../../src/libgalois.a -lpthread 

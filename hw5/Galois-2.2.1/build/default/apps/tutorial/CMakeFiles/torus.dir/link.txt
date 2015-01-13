@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/torus.dir/Torus.cpp.o  -o torus -rdynamic ../../src/libgalois.a -lpthread 

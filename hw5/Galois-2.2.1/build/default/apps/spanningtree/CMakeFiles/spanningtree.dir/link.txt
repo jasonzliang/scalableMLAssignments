@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/spanningtree.dir/SpanningTree.cpp.o  -o spanningtree -rdynamic ../../src/libgalois.a -lpthread 

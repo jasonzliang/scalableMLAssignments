@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/delaunayrefinement.dir/DelaunayRefinement.cpp.o  -o delaunayrefinement -rdynamic ../../src/libgalois.a -lpthread 

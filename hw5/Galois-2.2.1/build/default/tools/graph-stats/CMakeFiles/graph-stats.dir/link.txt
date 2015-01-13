@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/graph-stats.dir/graph-stats.cpp.o  -o graph-stats -rdynamic ../../src/libgalois.a -lpthread 

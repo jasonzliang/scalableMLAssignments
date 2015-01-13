@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/graph-convert.dir/graph-convert.cpp.o  -o graph-convert -rdynamic ../../src/libgalois.a -lpthread 

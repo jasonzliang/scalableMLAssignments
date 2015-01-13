@@ -1,0 +1,736 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../apps/avi/libAVI/AVI.h
+vector
+-
+list
+-
+queue
+-
+string
+-
+sstream
+-
+iostream
+-
+cstdio
+-
+cassert
+-
+cmath
+-
+cstring
+-
+AuxDefs.h
+../../apps/avi/libAVI/AuxDefs.h
+ElementalOperation.h
+../../apps/avi/libAVI/ElementalOperation.h
+DiagonalMassForSW.h
+../../apps/avi/libAVI/DiagonalMassForSW.h
+StressWork.h
+../../apps/avi/libAVI/StressWork.h
+util.h
+../../apps/avi/libAVI/util.h
+
+../../apps/avi/libAVI/StandardAVI.h
+AVI.h
+../../apps/avi/libAVI/AVI.h
+
+../../apps/avi/libElOp/DiagonalMassForSW.h
+AuxDefs.h
+../../apps/avi/libElOp/AuxDefs.h
+ElementalOperation.h
+../../apps/avi/libElOp/ElementalOperation.h
+
+../../apps/avi/libElOp/ElementalOperation.h
+vector
+-
+iostream
+-
+cstdlib
+-
+AuxDefs.h
+../../apps/avi/libElOp/AuxDefs.h
+Element.h
+../../apps/avi/libElOp/Element.h
+Material.h
+../../apps/avi/libElOp/Material.h
+
+../../apps/avi/libElOp/StressWork.h
+vector
+-
+algorithm
+-
+cassert
+-
+Galois/Runtime/PerThreadStorage.h
+../../apps/avi/libElOp/Galois/Runtime/PerThreadStorage.h
+ElementalOperation.h
+../../apps/avi/libElOp/ElementalOperation.h
+AuxDefs.h
+../../apps/avi/libElOp/AuxDefs.h
+
+../../apps/avi/libElm/libElement/Element.h
+vector
+-
+AuxDefs.h
+../../apps/avi/libElm/libElement/AuxDefs.h
+ElementGeometry.h
+../../apps/avi/libElm/libElement/ElementGeometry.h
+BasisFunctions.h
+../../apps/avi/libElm/libElement/BasisFunctions.h
+
+../../apps/avi/libElm/libElement/ElementBoundaryTrace.h
+vector
+-
+AuxDefs.h
+../../apps/avi/libElm/libElement/AuxDefs.h
+Element.h
+../../apps/avi/libElm/libElement/Element.h
+
+../../apps/avi/libElm/libElement/P12DElement.h
+Element.h
+../../apps/avi/libElm/libElement/Element.h
+P1nDElement.h
+../../apps/avi/libElm/libElement/P1nDElement.h
+ElementGeometry.h
+../../apps/avi/libElm/libElement/ElementGeometry.h
+Triangle.h
+../../apps/avi/libElm/libElement/Triangle.h
+ElementBoundaryTrace.h
+../../apps/avi/libElm/libElement/ElementBoundaryTrace.h
+ShapesEvaluated.h
+../../apps/avi/libElm/libElement/ShapesEvaluated.h
+iostream
+-
+vector
+-
+cassert
+-
+
+../../apps/avi/libElm/libElement/P13DElement.h
+P1nDElement.h
+../../apps/avi/libElm/libElement/P1nDElement.h
+P12DElement.h
+../../apps/avi/libElm/libElement/P12DElement.h
+ShapesEvaluatedP13D.h
+../../apps/avi/libElm/libElement/ShapesEvaluatedP13D.h
+Tetrahedron.h
+../../apps/avi/libElm/libElement/Tetrahedron.h
+ElementGeometry.h
+../../apps/avi/libElm/libElement/ElementGeometry.h
+iostream
+-
+vector
+-
+cassert
+-
+
+../../apps/avi/libElm/libElement/P1nDElement.h
+vector
+-
+cassert
+-
+AuxDefs.h
+../../apps/avi/libElm/libElement/AuxDefs.h
+Element.h
+../../apps/avi/libElm/libElement/Element.h
+ElementBoundaryTrace.h
+../../apps/avi/libElm/libElement/ElementBoundaryTrace.h
+ElementGeometry.h
+../../apps/avi/libElm/libElement/ElementGeometry.h
+
+../../apps/avi/libElm/libGeom/ElementGeometry.h
+AuxDefs.h
+../../apps/avi/libElm/libGeom/AuxDefs.h
+string
+-
+vector
+-
+iostream
+-
+cmath
+-
+
+../../apps/avi/libElm/libGeom/Segment.h
+AuxDefs.h
+../../apps/avi/libElm/libGeom/AuxDefs.h
+ElementGeometry.h
+../../apps/avi/libElm/libGeom/ElementGeometry.h
+cmath
+-
+iostream
+-
+cassert
+-
+
+../../apps/avi/libElm/libGeom/Tetrahedron.h
+Galois/Runtime/ll/gio.h
+../../apps/avi/libElm/libGeom/Galois/Runtime/ll/gio.h
+algorithm
+-
+cassert
+-
+ElementGeometry.h
+../../apps/avi/libElm/libGeom/ElementGeometry.h
+Triangle.h
+../../apps/avi/libElm/libGeom/Triangle.h
+
+../../apps/avi/libElm/libGeom/Triangle.h
+AuxDefs.h
+../../apps/avi/libElm/libGeom/AuxDefs.h
+ElementGeometry.h
+../../apps/avi/libElm/libGeom/ElementGeometry.h
+Segment.h
+../../apps/avi/libElm/libGeom/Segment.h
+algorithm
+-
+cmath
+-
+cassert
+-
+
+../../apps/avi/libElm/libQuad/Quadrature.h
+algorithm
+-
+
+../../apps/avi/libElm/libShape/Linear.h
+Shape.h
+../../apps/avi/libElm/libShape/Shape.h
+
+../../apps/avi/libElm/libShape/Shape.h
+cstddef
+-
+
+../../apps/avi/libElm/libShapesEvaluated/BasisFunctions.h
+Shape.h
+../../apps/avi/libElm/libShapesEvaluated/Shape.h
+Quadrature.h
+../../apps/avi/libElm/libShapesEvaluated/Quadrature.h
+ElementGeometry.h
+../../apps/avi/libElm/libShapesEvaluated/ElementGeometry.h
+
+../../apps/avi/libElm/libShapesEvaluated/ShapesEvaluated.h
+string
+-
+Shape.h
+../../apps/avi/libElm/libShapesEvaluated/Shape.h
+Quadrature.h
+../../apps/avi/libElm/libShapesEvaluated/Quadrature.h
+ElementGeometry.h
+../../apps/avi/libElm/libShapesEvaluated/ElementGeometry.h
+BasisFunctions.h
+../../apps/avi/libElm/libShapesEvaluated/BasisFunctions.h
+Linear.h
+../../apps/avi/libElm/libShapesEvaluated/Linear.h
+
+../../apps/avi/libElm/libShapesEvaluated/ShapesEvaluatedP13D.h
+ShapesEvaluated.h
+../../apps/avi/libElm/libShapesEvaluated/ShapesEvaluated.h
+Quadrature.h
+../../apps/avi/libElm/libShapesEvaluated/Quadrature.h
+Linear.h
+../../apps/avi/libElm/libShapesEvaluated/Linear.h
+
+../../apps/avi/libMat/Material.h
+Galois/Runtime/PerThreadStorage.h
+../../apps/avi/libMat/Galois/Runtime/PerThreadStorage.h
+vector
+-
+string
+-
+iostream
+-
+algorithm
+-
+cmath
+-
+cassert
+-
+
+../../apps/avi/libMeshInit/femap/Femap.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+map
+-
+cstring
+-
+cstdlib
+-
+cstdio
+-
+cmath
+-
+boost/iostreams/filtering_stream.hpp
+-
+boost/iostreams/copy.hpp
+-
+boost/iostreams/filter/gzip.hpp
+-
+FemapData.h
+../../apps/avi/libMeshInit/femap/FemapData.h
+
+../../apps/avi/libMeshInit/femap/FemapData.h
+
+../../apps/avi/util/AuxDefs.h
+cstddef
+-
+cmath
+-
+cstdlib
+-
+vector
+-
+
+../../apps/avi/util/util.h
+iostream
+-
+vector
+-
+
+../../include/Galois/Runtime/ActiveThreads.h
+
+../../include/Galois/Runtime/PerThreadStorage.h
+Galois/config.h
+../../include/Galois/Runtime/Galois/config.h
+Galois/Runtime/ll/TID.h
+../../include/Galois/Runtime/Galois/Runtime/ll/TID.h
+Galois/Runtime/ll/HWTopo.h
+../../include/Galois/Runtime/Galois/Runtime/ll/HWTopo.h
+Galois/Runtime/ThreadPool.h
+../../include/Galois/Runtime/Galois/Runtime/ThreadPool.h
+Galois/Runtime/ActiveThreads.h
+../../include/Galois/Runtime/Galois/Runtime/ActiveThreads.h
+boost/utility.hpp
+-
+cassert
+-
+vector
+-
+
+../../include/Galois/Runtime/ThreadPool.h
+Galois/config.h
+../../include/Galois/Runtime/Galois/config.h
+
+../../include/Galois/Runtime/ll/HWTopo.h
+
+../../include/Galois/Runtime/ll/TID.h
+
+../../include/Galois/Runtime/ll/gio.h
+sstream
+-
+cerrno
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/AVI.h
+vector
+-
+list
+-
+queue
+-
+string
+-
+sstream
+-
+iostream
+-
+cstdio
+-
+cassert
+-
+cmath
+-
+cstring
+-
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/AuxDefs.h
+ElementalOperation.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/ElementalOperation.h
+DiagonalMassForSW.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/DiagonalMassForSW.h
+StressWork.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/StressWork.h
+util.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/util.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/StandardAVI.cpp
+StandardAVI.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/StandardAVI.h
+util.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/util.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/StandardAVI.h
+AVI.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libAVI/AVI.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/DiagonalMassForSW.cpp
+DiagonalMassForSW.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/DiagonalMassForSW.h
+Material.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/Material.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/DiagonalMassForSW.h
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/AuxDefs.h
+ElementalOperation.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/ElementalOperation.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/ElementalOperation.cpp
+cmath
+-
+vector
+-
+algorithm
+-
+util.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/util.h
+ElementalOperation.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/ElementalOperation.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/ElementalOperation.h
+vector
+-
+iostream
+-
+cstdlib
+-
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/AuxDefs.h
+Element.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/Element.h
+Material.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/Material.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/StressWork.cpp
+iostream
+-
+StressWork.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/StressWork.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/StressWork.h
+vector
+-
+algorithm
+-
+cassert
+-
+Galois/Runtime/PerThreadStorage.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/Galois/Runtime/PerThreadStorage.h
+ElementalOperation.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/ElementalOperation.h
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElOp/AuxDefs.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/ElementGeometry.h
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/AuxDefs.h
+string
+-
+vector
+-
+iostream
+-
+cmath
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Segment.h
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/AuxDefs.h
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/ElementGeometry.h
+cmath
+-
+iostream
+-
+cassert
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Tetrahedron.cpp
+Tetrahedron.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Tetrahedron.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Tetrahedron.h
+Galois/Runtime/ll/gio.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Galois/Runtime/ll/gio.h
+algorithm
+-
+cassert
+-
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/ElementGeometry.h
+Triangle.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Triangle.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Triangle.h
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/AuxDefs.h
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/ElementGeometry.h
+Segment.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libGeom/Segment.h
+algorithm
+-
+cmath
+-
+cassert
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libQuad/Quadrature.cpp
+iostream
+-
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libQuad/Quadrature.h
+cmath
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libQuad/Quadrature.h
+algorithm
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShape/Shape.cpp
+Shape.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShape/Shape.h
+cmath
+-
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShape/Shape.h
+cstddef
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctions.cpp
+BasisFunctions.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctions.h
+BasisFunctionsProvided.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctionsProvided.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctions.h
+Shape.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Shape.h
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Quadrature.h
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ElementGeometry.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctionsProvided.h
+Shape.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Shape.h
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Quadrature.h
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ElementGeometry.h
+BasisFunctions.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctions.h
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/QuadratureP3.cpp
+QuadratureP3.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/QuadratureP3.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/QuadratureP3.h
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Quadrature.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluated.cpp
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Quadrature.h
+Linear.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Linear.h
+ShapesEvaluated.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluated.h
+util.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/util.h
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluated.h
+string
+-
+Shape.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Shape.h
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Quadrature.h
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ElementGeometry.h
+BasisFunctions.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/BasisFunctions.h
+Linear.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Linear.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluatedP13D.cpp
+ShapesEvaluatedP13D.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluatedP13D.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluatedP13D.h
+ShapesEvaluated.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/ShapesEvaluated.h
+Quadrature.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Quadrature.h
+Linear.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libElm/libShapesEvaluated/Linear.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/LinearElasticMaterial.cpp
+Material.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/Material.h
+cmath
+-
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/Material.cpp
+Material.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/Material.h
+vector
+-
+cstdlib
+-
+cmath
+-
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/Material.h
+Galois/Runtime/PerThreadStorage.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/Galois/Runtime/PerThreadStorage.h
+vector
+-
+string
+-
+iostream
+-
+algorithm
+-
+cmath
+-
+cassert
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/NeoHookean.cpp
+Material.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMat/Material.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/CoordConn.h
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/AuxDefs.h
+Element.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Element.h
+P12DElement.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/P12DElement.h
+P13DElement.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/P13DElement.h
+ElementGeometry.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/ElementGeometry.h
+Triangle.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Triangle.h
+Tetrahedron.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Tetrahedron.h
+Femap.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Femap.h
+cassert
+-
+algorithm
+-
+sstream
+-
+iostream
+-
+vector
+-
+stdexcept
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/MeshInit.cpp
+MeshInit.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/MeshInit.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/MeshInit.h
+vector
+-
+string
+-
+algorithm
+-
+exception
+-
+cassert
+-
+cmath
+-
+cstdio
+-
+boost/noncopyable.hpp
+-
+AuxDefs.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/AuxDefs.h
+StandardAVI.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/StandardAVI.h
+Element.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Element.h
+Femap.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Femap.h
+Material.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/Material.h
+CoordConn.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/CoordConn.h
+TriLinearCoordConn.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/TriLinearCoordConn.h
+TetLinearCoordConn.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/TetLinearCoordConn.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/TetLinearCoordConn.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/TriLinearCoordConn.h
+CoordConn.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/dgmechanics/CoordConn.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/femap/Femap.cpp
+Femap.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/femap/Femap.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/femap/Femap.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+map
+-
+cstring
+-
+cstdlib
+-
+cstdio
+-
+cmath
+-
+boost/iostreams/filtering_stream.hpp
+-
+boost/iostreams/copy.hpp
+-
+boost/iostreams/filter/gzip.hpp
+-
+FemapData.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/femap/FemapData.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/apps/avi/libMeshInit/femap/FemapData.h
+
+include/Galois/config.h
+

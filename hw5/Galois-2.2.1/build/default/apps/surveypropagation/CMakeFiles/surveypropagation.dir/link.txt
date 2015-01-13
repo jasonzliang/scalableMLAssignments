@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/surveypropagation.dir/SurveyPropagation.cpp.o  -o surveypropagation -rdynamic ../../src/libgalois.a -lpthread 

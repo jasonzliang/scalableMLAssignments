@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-bandwidth.dir/bandwidth.cpp.o  -o test-bandwidth -rdynamic ../src/libgalois.a -lpthread 

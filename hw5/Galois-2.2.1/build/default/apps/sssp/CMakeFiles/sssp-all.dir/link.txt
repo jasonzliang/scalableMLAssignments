@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/sssp-all.dir/SSSPall.cpp.o  -o sssp-all -rdynamic ../../src/libgalois.a -lpthread 

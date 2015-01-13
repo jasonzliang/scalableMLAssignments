@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-loopoverhead.dir/loopoverhead.cpp.o  -o test-loopoverhead -rdynamic ../src/libgalois.a -lpthread 

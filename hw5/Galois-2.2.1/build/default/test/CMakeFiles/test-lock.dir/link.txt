@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-lock.dir/lock.cpp.o  -o test-lock -rdynamic ../src/libgalois.a -lpthread 

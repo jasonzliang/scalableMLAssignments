@@ -1,0 +1,3 @@
+to build hw5, put this folder inside {Galois Root Install Dir}/apps/ and add the following line to {Galois Root Install Dir}/apps/CMakeLists.txt:
+
+add_subdirectory(hw5)

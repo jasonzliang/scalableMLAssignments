@@ -1,0 +1,266 @@
+***************************************************************
+Problem 1
+***************************************************************
+
+Part 1:
+sequential version timing:
+M: 50 N: 50
+time elapsed, averaged over 10 runs:0.0004441787023097277
+M: 500 N: 500
+time elapsed, averaged over 10 runs:0.8409011367009953
+
+a)code:
+#pragma omp parallel for private(i,j,k,sum) schedule(dynamic)
+for (i = 0; i < M; i++)
+{
+  for (j = 0; j < N; j++)
+  {
+    sum = 0;
+    for (k = 0; k < M; k++)
+    {
+      sum += A[i][k] * B[k][j];
+    }
+    C[i][j] = sum;
+  }
+}
+
+timing:
+M: 50 N: 50
+numThreads: 1	time elapsed, averaged over 10 runs:0.0005483986926265061
+numThreads: 4	time elapsed, averaged over 10 runs:0.0002669324981980026
+numThreads: 8	time elapsed, averaged over 10 runs:0.0001987939001992345
+numThreads: 16	time elapsed, averaged over 10 runs:0.02221642979420722
+M: 500 N: 500
+numThreads: 1	time elapsed, averaged over 10 runs:0.934312888502609
+numThreads: 4	time elapsed, averaged over 10 runs:0.2341271316050552
+numThreads: 8	time elapsed, averaged over 10 runs:0.117799911100883
+numThreads: 16	time elapsed, averaged over 10 runs:0.08658417731057852
+
+b)code:
+for (i = 0; i < M; i++)
+{
+  #pragma omp parallel for private(j,k,sum) schedule(dynamic)
+  for (j = 0; j < N; j++)
+  {
+    sum = 0;
+    for (k = 0; k < M; k++)
+    {
+      sum += A[i][k] * B[k][j];
+    }
+    C[i][j] = sum;
+  }
+}
+
+timing:
+M: 50 N: 50
+numThreads: 1	time elapsed, averaged over 10 runs:0.0005815817043185234
+numThreads: 4	time elapsed, averaged over 10 runs:0.0006406926899217069
+numThreads: 8	time elapsed, averaged over 10 runs:0.0007999081048183143
+numThreads: 16	time elapsed, averaged over 10 runs:1.229235494707245
+M: 500 N: 500
+numThreads: 1	time elapsed, averaged over 10 runs:0.962352704606019
+numThreads: 4	time elapsed, averaged over 10 runs:0.2718961304984987
+numThreads: 8	time elapsed, averaged over 10 runs:0.1418095554923639
+numThreads: 16	time elapsed, averaged over 10 runs:11.3445537277963
+
+c)code:
+#pragma omp parallel for private(i,j,k,sum) schedule(dynamic) collapse(2)
+for (i = 0; i < M; i++)
+{
+  for (j = 0; j < N; j++)
+  {
+    sum = 0;
+    for (k = 0; k < M; k++)
+    {
+      sum += A[i][k] * B[k][j];
+    }
+    C[i][j] = sum;
+  }
+}
+
+timing:
+M: 50 N: 50
+numThreads: 1	time elapsed, averaged over 10 runs:0.0006744820973835885
+numThreads: 4	time elapsed, averaged over 10 runs:0.0005516538047231733
+numThreads: 8	time elapsed, averaged over 10 runs:0.0006533563020639122
+numThreads: 16	time elapsed, averaged over 10 runs:0.02275172050576657
+M: 500 N: 500
+numThreads: 1	time elapsed, averaged over 10 runs:0.9535185093991458
+numThreads: 4	time elapsed, averaged over 10 runs:0.264031652698759
+numThreads: 8	time elapsed, averaged over 10 runs:0.1349418123019859
+numThreads: 16	time elapsed, averaged over 10 runs:0.0999530477100052
+
+For the 50x50 matrix size, increasing the number of threads actually decreases performance when compared to the sequential version. This is due to the additional overhead of spawning new threads and outweighs the time saved through parallelism. For the 500x500 matrix size, we see that increasing number of threads reduces the time to perform the matrix multipy for a) and c), althrough speedup is sublinear, especially when the number of threads increases beyond 4 (again due to overhead). It is interesting that for b), increasing the number of threads to 16 sharply decreases performance. This is probably due to the fact that stampede nodes use 2 cpus with 8 cores each, and using both incurs very expensive communication costs between the 2 cpus when creating new threads. 
+
+Part 2:
+
+For 50x50 matrix size, matlab takes 0.0000898 seconds (averaged over 10 runs), which is slightly faster than the C version. For 500x500 matrix size, matlab takes 0.0018 seconds (averaged over 10 runs), which is significantly faster than the C version. This is due to the lack of compiler optimizations done for the C code (-O0) and other tweaks such as for-loop order optimization and blocking that exploit locality of reference in the cache. 
+
+***************************************************************
+Problem 2
+***************************************************************
+a) See code submitted.
+
+b)
+start with rmse 1.98459 nr_threads 1
+iter 1 walltime 3.97705 rmse 1.61984
+iter 2 walltime 7.94945 rmse 1.60731
+iter 3 walltime 11.9214 rmse 1.60436
+iter 4 walltime 15.8928 rmse 1.60586
+iter 5 walltime 19.8648 rmse 1.60838
+iter 6 walltime 23.8371 rmse 1.61112
+iter 7 walltime 27.8087 rmse 1.61416
+iter 8 walltime 31.7813 rmse 1.61734
+iter 9 walltime 35.7537 rmse 1.62053
+iter 10 walltime 39.7261 rmse 1.62368
+
+start with rmse 1.98459 nr_threads 2
+iter 1 walltime 1.92642 rmse 1.61984
+iter 2 walltime 3.85145 rmse 1.60731
+iter 3 walltime 5.77737 rmse 1.60436
+iter 4 walltime 7.70225 rmse 1.60586
+iter 5 walltime 9.62533 rmse 1.60838
+iter 6 walltime 11.5504 rmse 1.61112
+iter 7 walltime 13.4751 rmse 1.61416
+iter 8 walltime 15.3992 rmse 1.61734
+iter 9 walltime 17.3245 rmse 1.62053
+iter 10 walltime 19.2475 rmse 1.62368
+
+start with rmse 1.98459 nr_threads 4
+iter 1 walltime 0.995827 rmse 1.61984
+iter 2 walltime 1.99102 rmse 1.60731
+iter 3 walltime 2.98596 rmse 1.60436
+iter 4 walltime 3.98245 rmse 1.60586
+iter 5 walltime 4.97745 rmse 1.60838
+iter 6 walltime 5.97245 rmse 1.61112
+iter 7 walltime 6.96677 rmse 1.61416
+iter 8 walltime 7.96197 rmse 1.61734
+iter 9 walltime 8.95668 rmse 1.62053
+iter 10 walltime 9.95108 rmse 1.62368
+
+start with rmse 1.98459 nr_threads 8
+iter 1 walltime 0.512946 rmse 1.61984
+iter 2 walltime 1.02298 rmse 1.60731
+iter 3 walltime 1.53124 rmse 1.60436
+iter 4 walltime 2.041 rmse 1.60586
+iter 5 walltime 2.5501 rmse 1.60838
+iter 6 walltime 3.05903 rmse 1.61112
+iter 7 walltime 3.5682 rmse 1.61416
+iter 8 walltime 4.07752 rmse 1.61734
+iter 9 walltime 4.58521 rmse 1.62053
+iter 10 walltime 5.09416 rmse 1.62368
+
+start with rmse 1.98459 nr_threads 16
+iter 1 walltime 0.339344 rmse 1.61984
+iter 2 walltime 0.655607 rmse 1.60731
+iter 3 walltime 0.931172 rmse 1.60436
+iter 4 walltime 1.20411 rmse 1.60586
+iter 5 walltime 1.47689 rmse 1.60838
+iter 6 walltime 1.74986 rmse 1.61112
+iter 7 walltime 2.02295 rmse 1.61416
+iter 8 walltime 2.29599 rmse 1.61734
+iter 9 walltime 2.56858 rmse 1.62053
+iter 10 walltime 2.84181 rmse 1.62368
+
+c) Matlab Output:
+iter (1):
+  minimize M while fixing U ... 3.94 seconds
+  minimize U while fixing M ... 6.18 seconds
+obj=3395153.9807 rmse(train)=0.8178
+iter (2):
+  minimize M while fixing U ... 3.57 seconds
+  minimize U while fixing M ... 5.46 seconds
+obj=2864016.7330 rmse(train)=0.7385
+iter (3):
+  minimize M while fixing U ... 3.48 seconds
+  minimize U while fixing M ... 5.74 seconds
+obj=2627908.4908 rmse(train)=0.7042
+iter (4):
+  minimize M while fixing U ... 3.78 seconds
+  minimize U while fixing M ... 5.75 seconds
+obj=2521291.9798 rmse(train)=0.6893
+iter (5):
+  minimize M while fixing U ... 3.36 seconds
+  minimize U while fixing M ... 5.80 seconds
+obj=2463474.1896 rmse(train)=0.6817
+iter (6):
+  minimize M while fixing U ... 3.81 seconds
+  minimize U while fixing M ... 5.75 seconds
+obj=2426645.6154 rmse(train)=0.6770
+iter (7):
+  minimize M while fixing U ... 3.48 seconds
+  minimize U while fixing M ... 5.54 seconds
+obj=2400593.7221 rmse(train)=0.6740
+iter (8):
+  minimize M while fixing U ... 3.87 seconds
+  minimize U while fixing M ... 6.09 seconds
+obj=2380912.5905 rmse(train)=0.6717
+iter (9):
+  minimize M while fixing U ... 3.89 seconds
+  minimize U while fixing M ... 5.97 seconds
+obj=2365408.1280 rmse(train)=0.6700
+iter (10):
+  minimize M while fixing U ... 3.79 seconds
+  minimize U while fixing M ... 5.77 seconds
+obj=2352827.9479 rmse(train)=0.6687
+rmse(probe)=1.6229
+total time taken=95.03
+
+With 16 threads, I can get about a 33x speedup compared to the matlab version, which takes 95.03 seconds.
+
+***************************************************************
+Problem 3
+***************************************************************
+
+a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b)For gradient descent, the computational complexity is:
+
+O(d*n)
+
+where d is the dimensionality and n is the number of training examples.
+
+c)For Newton's method, the computational complexity is:
+
+O(d*n^2)
+
+where d is the dimensionality and n is the number of training examples.

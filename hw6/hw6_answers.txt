@@ -1,0 +1,70 @@
+Problem 1:
+a)See attached pdf.
+
+b)For output files containing tf-idf values, see classic90.txt and classic3893.txt in problem1 folder.
+
+c-d)See submitted code.
+
+Problem 2:
+a) See code in problem2 folder.
+
+b) On classic90, batch k-means terminates prematurely after one iteration and gives very poor results. Incremental k-means performs very well on classic90 and returns clusters that very closely match groundtruth labels. The poor performance of batch k-means is due the small number of data points avaliable, as a result, k-mean gets stuck in a local optima very far away from the maximum. 
+
+On classic3893, both batch and incremental k-means perform well and cluster the data very closely to the groundtruth labels. However incremental k-means is faster by about a factor of 4. Here there are more points and as a result, batch k-means performs much better, in fact almost identically as well as incremental k-means but somewhat slower. 
+
+c)
+***classic90
+Incremental K-means 
+Iterations: 59
+Final Objective Value: 24.5601
+Time: 0.069783 seconds
+
+Batch K-means
+Iterations: 1
+Final Objective Value: 21.2471
+Time: 0.039255
+
+***classic3893
+Incremental K-means 
+Iterations: 2536
+Final Objective Value: 660.2629
+Time: 28.991144 seconds
+
+Batch K-means
+Iterations: 7
+Final Objective Value: 660.2976
+Time: 118.541131 seconds
+
+d)
+***classic90
+Incremental K-means:
+ 3    26     1
+30     0     0
+ 0     0    30
+
+Batch K-means:
+11    13     6
+ 9    12     9
+10     9    11
+
+***classic3893
+Incremental K-means:
+19        4        1010
+1459      0        1
+21        1376     1
+
+Batch K-means:
+1009      4        20
+2         0        1458
+1         1377     20
+
+Problem 3:
+Prediction Accuracy on testing data set:
+Accuracy = 40.352% (20176/50000)
+
+Prediction Accuracy on training data set:
+Accuracy = 99.706% (299118/300000)
+
+I suspect that the low classification accuracy on test dataset is due to the fact that I am using the idf scores of the training dataset for the words in the test dataset. Finally, it could also be that the parameters for the SVM classifier, namely the bias and C parameters, are not tuned correctly. 
+
+The high accuracy on the training data set suggests that I have correctly computed the tf-idf scores and that they are very useful in distinguishing between positive and negative examples of webspam. 

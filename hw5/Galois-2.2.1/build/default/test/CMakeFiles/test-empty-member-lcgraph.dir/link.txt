@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-empty-member-lcgraph.dir/empty-member-lcgraph.cpp.o  -o test-empty-member-lcgraph -rdynamic ../src/libgalois.a -lpthread 

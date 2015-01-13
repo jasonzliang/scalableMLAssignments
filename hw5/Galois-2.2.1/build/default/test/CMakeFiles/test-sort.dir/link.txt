@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-sort.dir/sort.cpp.o  -o test-sort -rdynamic ../src/libgalois.a -lpthread 

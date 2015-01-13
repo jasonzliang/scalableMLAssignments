@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -ffast-math -O3 -DNDEBUG    CMakeFiles/barneshut.dir/Barneshut.cpp.o  -o barneshut -rdynamic ../../src/libgalois.a -lpthread 

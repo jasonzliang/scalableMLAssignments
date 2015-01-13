@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/PtrLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+stdint.h
+-
+cassert
+-
+
+../../include/Galois/Runtime/ll/SimpleLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+cassert
+-
+
+../../include/Galois/Runtime/ll/StaticInstance.h
+CompilerSpecific.h
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/static.cpp
+Galois/config.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/config.h
+Galois/Runtime/ll/PtrLock.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Runtime/ll/PtrLock.h
+Galois/Runtime/ll/SimpleLock.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Runtime/ll/SimpleLock.h
+Galois/Runtime/ll/StaticInstance.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/test/Galois/Runtime/ll/StaticInstance.h
+iostream
+-
+
+include/Galois/config.h
+

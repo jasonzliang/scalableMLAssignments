@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-gdeque.dir/gdeque.cpp.o  -o test-gdeque -rdynamic ../src/libgalois.a -lpthread 

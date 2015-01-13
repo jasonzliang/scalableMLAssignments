@@ -1,0 +1,3 @@
+repository='external project URL'
+module='http://www.graphanalysis.org/benchmark/SSCA2-2.2.tar.gz'
+tag=''

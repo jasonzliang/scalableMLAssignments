@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/boruvka.dir/Boruvka.cpp.o  -o boruvka -rdynamic ../../src/libgalois.a -lpthread 

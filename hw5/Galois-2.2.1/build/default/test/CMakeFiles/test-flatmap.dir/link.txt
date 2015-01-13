@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-flatmap.dir/flatmap.cpp.o  -o test-flatmap -rdynamic ../src/libgalois.a -lpthread 

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/KruskalSerial.dir/KruskalSerial.cpp.o  -o KruskalSerial -rdynamic ../../src/libgalois.a -lpthread 

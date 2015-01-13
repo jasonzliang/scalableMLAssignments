@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/hw5.dir/hw5.cpp.o  -o hw5 -rdynamic ../../src/libgalois.a -lpthread 

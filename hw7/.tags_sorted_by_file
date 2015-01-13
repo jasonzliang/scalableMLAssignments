@@ -1,0 +1,62 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O3 -fopenmp$/;"	m
+EXE	Makefile	/^EXE = problem1 problem3$/;"	m
+INC	Makefile	/^INC = -I.\/$/;"	m
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+f	list_nodes.py	/^f = open("livejournal.nodes", 'wb')$/;"	v
+computePageRank	problem1.cpp	/^void computePageRank(sparseMatrix &mat)$/;"	f
+main	problem1.cpp	/^int main(int argc, char **argv)$/;"	f
+pageRank_sort	problem1.cpp	/^bool pageRank_sort(pageRank a, pageRank b)$/;"	f
+topRankedNodes	problem1.cpp	/^void topRankedNodes(double *x, int nRows, int topX)$/;"	f
+PROBLEM	problem1.h	2;"	d
+index	problem1.h	/^  int index;$/;"	m	struct:pageRank
+pageRank	problem1.h	/^struct pageRank$/;"	s
+value	problem1.h	/^  double value;$/;"	m	struct:pageRank
+conjugateGradient	problem3.cpp	/^void conjugateGradient(sparseMatrix &X, sparseMatrix &X_t, double *d_ii, double *w, double *b)$/;"	f
+dim	problem3.cpp	/^int n, dim, nnz;$/;"	v
+dotProduct	problem3.cpp	/^double dotProduct(double *x, double *y, int nSize)$/;"	f
+lambda	problem3.cpp	/^double lambda = 1.0;$/;"	v
+main	problem3.cpp	/^int main(int argc, char **argv)$/;"	f
+multA	problem3.cpp	/^void multA(sparseMatrix &X, sparseMatrix &X_t, double *d_ii, double *bufferN, double *x, double *y)$/;"	f
+n	problem3.cpp	/^int n, dim, nnz;$/;"	v
+nnz	problem3.cpp	/^int n, dim, nnz;$/;"	v
+norm	problem3.cpp	/^double norm(double *x, int nSize)$/;"	f
+numIter	problem3.cpp	/^int numIter = 1;$/;"	v
+printArray	problem3.cpp	/^void printArray(double *x, int nSize)$/;"	f
+solveLogisticRegression	problem3.cpp	/^int solveLogisticRegression(sparseMatrix &X, sparseMatrix &X_t, vector<double> &y)$/;"	f
+computeD_ii	sparse_matrix.cpp	/^void sparseMatrix::computeD_ii(double *d_ii)$/;"	f	class:sparseMatrix
+computeGradient	sparse_matrix.cpp	/^void sparseMatrix::computeGradient(double *gradient, double *w, double *d_ii, vector<double> &y, double lambda)$/;"	f	class:sparseMatrix
+computeP_t	sparse_matrix.cpp	/^void sparseMatrix::computeP_t(double *d_ii, double *newvalues, double alpha)$/;"	f	class:sparseMatrix
+dotProduct	sparse_matrix.cpp	/^double sparseMatrix::dotProduct(int row, double *w)$/;"	f	class:sparseMatrix
+multP_t	sparse_matrix.cpp	/^void sparseMatrix::multP_t(double *x, double *y, double alphavr_sum)$/;"	f	class:sparseMatrix
+multiply	sparse_matrix.cpp	/^void sparseMatrix::multiply(double *x, double *y)$/;"	f	class:sparseMatrix
+readMetafile	sparse_matrix.cpp	/^void sparseMatrix::readMetafile(char *metaFile)$/;"	f	class:sparseMatrix
+setTranspose	sparse_matrix.cpp	/^void sparseMatrix::setTranspose(vector<triplet> &tripletList)$/;"	f	class:sparseMatrix
+sparseMatrix	sparse_matrix.cpp	/^sparseMatrix::sparseMatrix(char *dataFile, char *metaFile)$/;"	f	class:sparseMatrix
+sparseMatrix	sparse_matrix.cpp	/^sparseMatrix::sparseMatrix(char *filename, vector<double> &labels, vector<triplet> &tripletList)$/;"	f	class:sparseMatrix
+sparseMatrix	sparse_matrix.cpp	/^sparseMatrix::sparseMatrix(int nRows, int nCols, int numEntries):$/;"	f	class:sparseMatrix
+triplet_sort	sparse_matrix.cpp	/^bool triplet_sort(triplet a, triplet b)$/;"	f
+~sparseMatrix	sparse_matrix.cpp	/^sparseMatrix::~sparseMatrix()$/;"	f	class:sparseMatrix
+SPARSE_MATRIX	sparse_matrix.h	2;"	d
+col	sparse_matrix.h	/^  int col;$/;"	m	struct:triplet
+col_indices	sparse_matrix.h	/^  int *col_indices;$/;"	m	class:sparseMatrix
+getNumCols	sparse_matrix.h	/^  inline int getNumCols()$/;"	f	class:sparseMatrix
+getNumEntries	sparse_matrix.h	/^  inline int getNumEntries()$/;"	f	class:sparseMatrix
+getNumRows	sparse_matrix.h	/^  inline int getNumRows()$/;"	f	class:sparseMatrix
+getValues	sparse_matrix.h	/^  inline double *getValues()$/;"	f	class:sparseMatrix
+nCols	sparse_matrix.h	/^  int nRows, nCols, numEntries;$/;"	m	class:sparseMatrix
+nRows	sparse_matrix.h	/^  int nRows, nCols, numEntries;$/;"	m	class:sparseMatrix
+numEntries	sparse_matrix.h	/^  int nRows, nCols, numEntries;$/;"	m	class:sparseMatrix
+row	sparse_matrix.h	/^  int row;$/;"	m	struct:triplet
+row_length	sparse_matrix.h	/^  int *row_length;$/;"	m	class:sparseMatrix
+row_start_pos	sparse_matrix.h	/^  int *row_start_pos;$/;"	m	class:sparseMatrix
+setValues	sparse_matrix.h	/^  inline void setValues(double *x)$/;"	f	class:sparseMatrix
+sparseMatrix	sparse_matrix.h	/^class sparseMatrix$/;"	c
+triplet	sparse_matrix.h	/^struct triplet$/;"	s
+value	sparse_matrix.h	/^  double value;$/;"	m	struct:triplet
+values	sparse_matrix.h	/^  double *values;$/;"	m	class:sparseMatrix

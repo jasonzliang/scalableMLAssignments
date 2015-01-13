@@ -1,0 +1,22 @@
+questions: 
+is friendster.dat a symmetric matrix?
+how to convert friendster.dat for galois?
+compile error with mahout, wrong java version
+transpose sparse matrix, or change order of operations for multiply?
+
+graphlab run:
+./pagerank --format tsv --iterations 100 --ncpus 16 --use_delta 1 --graph ../../../../hw7/newdata/friendster.dat
+
+spark compile:
+./sbt/sbt -Dhadoop.version=2.3.0 -Pyarn assembly
+mvn -Pyarn -Phadoop-2.3 -Dhadoop.version=2.3.0 -DskipTests clean package
+
+spark run:
+HADOOP_CONF_DIR=/usr/lib/hadoop-yarn/etc/hadoop/ MASTER=yarn-cluster ./run-example graphx.Analytics pagerank /user/jliang/hw7/friendster.dat --numEPart=128 --numIter=10 --output=FD.out
+HADOOP_CONF_DIR=/usr/lib/hadoop-yarn/etc/hadoop/ MASTER=yarn-cluster ./run-example mllib.JavaALS /user/jliang/hw7/movielens/train 10 10 0.1 /user/jliang/als_spark_movielens_10
+
+mahout compile:
+mvn clean install -Dhadoop2 -Dhadoop2.version=2.3.0 -DskipTests=true
+
+mahout run:
+./mahout pagerank --output /user/jliang/livejournal-pagerank --vertices /user/jliang/hw7/livejournal.nodes --edges /user/jliang/hw7/livejournal.dat --numIterations 100 --stayingProbability 0.85

@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/test-pc.dir/pc.cpp.o  -o test-pc -rdynamic ../src/libgalois.a -lpthread 

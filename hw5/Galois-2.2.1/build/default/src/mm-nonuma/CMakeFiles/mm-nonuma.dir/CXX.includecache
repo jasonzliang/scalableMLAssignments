@@ -1,0 +1,128 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Galois/Runtime/ActiveThreads.h
+
+../../include/Galois/Runtime/PerThreadStorage.h
+Galois/config.h
+../../include/Galois/Runtime/Galois/config.h
+Galois/Runtime/ll/TID.h
+../../include/Galois/Runtime/Galois/Runtime/ll/TID.h
+Galois/Runtime/ll/HWTopo.h
+../../include/Galois/Runtime/Galois/Runtime/ll/HWTopo.h
+Galois/Runtime/ThreadPool.h
+../../include/Galois/Runtime/Galois/Runtime/ThreadPool.h
+Galois/Runtime/ActiveThreads.h
+../../include/Galois/Runtime/Galois/Runtime/ActiveThreads.h
+boost/utility.hpp
+-
+cassert
+-
+vector
+-
+
+../../include/Galois/Runtime/ThreadPool.h
+Galois/config.h
+../../include/Galois/Runtime/Galois/config.h
+
+../../include/Galois/Runtime/ll/CacheLineStorage.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/HWTopo.h
+
+../../include/Galois/Runtime/ll/PtrLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+stdint.h
+-
+cassert
+-
+
+../../include/Galois/Runtime/ll/SimpleLock.h
+Galois/config.h
+../../include/Galois/Runtime/ll/Galois/config.h
+Galois/Runtime/ll/CompilerSpecific.h
+../../include/Galois/Runtime/ll/Galois/Runtime/ll/CompilerSpecific.h
+cassert
+-
+
+../../include/Galois/Runtime/ll/StaticInstance.h
+CompilerSpecific.h
+../../include/Galois/Runtime/ll/CompilerSpecific.h
+
+../../include/Galois/Runtime/ll/TID.h
+
+../../include/Galois/Runtime/ll/gio.h
+sstream
+-
+cerrno
+-
+
+../../include/Galois/Runtime/mm/Mem.h
+Galois/Runtime/PerThreadStorage.h
+../../include/Galois/Runtime/mm/Galois/Runtime/PerThreadStorage.h
+Galois/Runtime/ll/SimpleLock.h
+../../include/Galois/Runtime/mm/Galois/Runtime/ll/SimpleLock.h
+Galois/Runtime/ll/PtrLock.h
+../../include/Galois/Runtime/mm/Galois/Runtime/ll/PtrLock.h
+Galois/Runtime/ll/CacheLineStorage.h
+../../include/Galois/Runtime/mm/Galois/Runtime/ll/CacheLineStorage.h
+boost/utility.hpp
+-
+cstdlib
+-
+cstring
+-
+map
+-
+cstddef
+-
+memory.h
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Mem.cpp
+Galois/Runtime/mm/Mem.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/Runtime/mm/Mem.h
+map
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/NumaMem.cpp
+Galois/config.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/config.h
+Galois/Runtime/mm/Mem.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/Runtime/mm/Mem.h
+Galois/Runtime/ll/gio.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/Runtime/ll/gio.h
+numa.h
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/PageAlloc.cpp
+Galois/Runtime/mm/Mem.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/Runtime/mm/Mem.h
+Galois/Runtime/ll/gio.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/Runtime/ll/gio.h
+Galois/Runtime/ll/StaticInstance.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/mm/Galois/Runtime/ll/StaticInstance.h
+sys/mman.h
+-
+map
+-
+vector
+-
+numeric
+-
+
+include/Galois/config.h
+

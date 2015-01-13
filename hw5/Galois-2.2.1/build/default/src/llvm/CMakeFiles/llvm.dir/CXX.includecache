@@ -1,0 +1,346 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/llvm/ADT/APFloat.h
+llvm/ADT/APInt.h
+../../include/llvm/ADT/llvm/ADT/APInt.h
+
+../../include/llvm/ADT/APInt.h
+llvm/ADT/ArrayRef.h
+../../include/llvm/ADT/llvm/ADT/ArrayRef.h
+llvm/Support/MathExtras.h
+../../include/llvm/ADT/llvm/Support/MathExtras.h
+cassert
+-
+climits
+-
+cstring
+-
+string
+-
+
+../../include/llvm/ADT/APSInt.h
+llvm/ADT/APInt.h
+../../include/llvm/ADT/llvm/ADT/APInt.h
+
+../../include/llvm/ADT/ArrayRef.h
+llvm/ADT/SmallVector.h
+../../include/llvm/ADT/llvm/ADT/SmallVector.h
+vector
+-
+
+../../include/llvm/ADT/DenseMapInfo.h
+llvm/Support/PointerLikeTypeTraits.h
+../../include/llvm/ADT/llvm/Support/PointerLikeTypeTraits.h
+llvm/Support/type_traits.h
+../../include/llvm/ADT/llvm/Support/type_traits.h
+
+../../include/llvm/ADT/OwningPtr.h
+cassert
+-
+cstddef
+-
+
+../../include/llvm/ADT/SmallPtrSet.h
+cassert
+-
+cstddef
+-
+cstring
+-
+iterator
+-
+llvm/Support/DataTypes.h
+../../include/llvm/ADT/llvm/Support/DataTypes.h
+llvm/Support/PointerLikeTypeTraits.h
+../../include/llvm/ADT/llvm/Support/PointerLikeTypeTraits.h
+
+../../include/llvm/ADT/SmallString.h
+llvm/ADT/SmallVector.h
+../../include/llvm/ADT/llvm/ADT/SmallVector.h
+llvm/ADT/StringRef.h
+../../include/llvm/ADT/llvm/ADT/StringRef.h
+
+../../include/llvm/ADT/SmallVector.h
+llvm/Support/type_traits.h
+../../include/llvm/ADT/llvm/Support/type_traits.h
+algorithm
+-
+cassert
+-
+cstddef
+-
+cstdlib
+-
+cstring
+-
+iterator
+-
+memory
+-
+
+../../include/llvm/ADT/StringExtras.h
+llvm/Support/DataTypes.h
+../../include/llvm/ADT/llvm/Support/DataTypes.h
+llvm/ADT/APFloat.h
+../../include/llvm/ADT/llvm/ADT/APFloat.h
+llvm/ADT/DenseMapInfo.h
+../../include/llvm/ADT/llvm/ADT/DenseMapInfo.h
+llvm/ADT/StringRef.h
+../../include/llvm/ADT/llvm/ADT/StringRef.h
+cctype
+-
+cstdio
+-
+string
+-
+
+../../include/llvm/ADT/StringMap.h
+llvm/ADT/StringRef.h
+../../include/llvm/ADT/llvm/ADT/StringRef.h
+llvm/Support/Allocator.h
+../../include/llvm/ADT/llvm/Support/Allocator.h
+cstring
+-
+
+../../include/llvm/ADT/StringRef.h
+cassert
+-
+cstring
+-
+utility
+-
+string
+-
+
+../../include/llvm/ADT/Twine.h
+llvm/ADT/StringRef.h
+../../include/llvm/ADT/llvm/ADT/StringRef.h
+llvm/Support/DataTypes.h
+../../include/llvm/ADT/llvm/Support/DataTypes.h
+cassert
+-
+string
+-
+iostream
+-
+
+../../include/llvm/ADT/ilist.h
+algorithm
+-
+cassert
+-
+cstddef
+-
+iterator
+-
+
+../../include/llvm/Support/AlignOf.h
+
+../../include/llvm/Support/Allocator.h
+llvm/Support/AlignOf.h
+../../include/llvm/Support/llvm/Support/AlignOf.h
+llvm/Support/MathExtras.h
+../../include/llvm/Support/llvm/Support/MathExtras.h
+llvm/Support/DataTypes.h
+../../include/llvm/Support/llvm/Support/DataTypes.h
+algorithm
+-
+cassert
+-
+cstdlib
+-
+cstddef
+-
+
+../../include/llvm/Support/CommandLine.h
+llvm/Support/type_traits.h
+../../include/llvm/Support/llvm/Support/type_traits.h
+llvm/Support/Compiler.h
+../../include/llvm/Support/llvm/Support/Compiler.h
+llvm/ADT/SmallVector.h
+../../include/llvm/Support/llvm/ADT/SmallVector.h
+llvm/ADT/Twine.h
+../../include/llvm/Support/llvm/ADT/Twine.h
+cassert
+-
+climits
+-
+cstdarg
+-
+utility
+-
+vector
+-
+
+../../include/llvm/Support/Compiler.h
+
+../../include/llvm/Support/MathExtras.h
+llvm/Support/SwapByteOrder.h
+../../include/llvm/Support/llvm/Support/SwapByteOrder.h
+
+../../include/llvm/Support/Memory.h
+llvm/Support/DataTypes.h
+../../include/llvm/Support/llvm/Support/DataTypes.h
+string
+-
+
+../../include/llvm/Support/PointerLikeTypeTraits.h
+llvm/Support/DataTypes.h
+../../include/llvm/Support/llvm/Support/DataTypes.h
+
+../../include/llvm/Support/Recycler.h
+llvm/ADT/ilist.h
+../../include/llvm/Support/llvm/ADT/ilist.h
+llvm/Support/AlignOf.h
+../../include/llvm/Support/llvm/Support/AlignOf.h
+cassert
+-
+
+../../include/llvm/Support/SwapByteOrder.h
+llvm/Support/DataTypes.h
+../../include/llvm/Support/llvm/Support/DataTypes.h
+cstddef
+-
+limits
+-
+
+../../include/llvm/Support/type_traits.h
+utility
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/APFloat.cpp
+llvm/ADT/APFloat.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/APFloat.h
+llvm/ADT/APSInt.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/APSInt.h
+llvm/ADT/StringRef.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/StringRef.h
+llvm/Support/MathExtras.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/MathExtras.h
+limits.h
+-
+cstring
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/APInt.cpp
+llvm/ADT/APInt.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/APInt.h
+llvm/ADT/StringRef.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/StringRef.h
+llvm/ADT/SmallString.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/SmallString.h
+llvm/Support/MathExtras.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/MathExtras.h
+cmath
+-
+limits
+-
+cstring
+-
+cstdlib
+-
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/Allocator.cpp
+llvm/Support/Allocator.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/Allocator.h
+llvm/Support/DataTypes.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/DataTypes.h
+llvm/Support/Recycler.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/Recycler.h
+llvm/Support/Memory.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/Memory.h
+cstring
+-
+iostream
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/CommandLine.cpp
+llvm/Support/CommandLine.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/CommandLine.h
+llvm/ADT/SmallPtrSet.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/SmallPtrSet.h
+llvm/ADT/SmallString.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/SmallString.h
+llvm/ADT/StringMap.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/StringMap.h
+llvm/ADT/Twine.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/Twine.h
+iostream
+-
+sstream
+-
+cerrno
+-
+cstdlib
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/SmallPtrSet.cpp
+llvm/ADT/SmallPtrSet.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/SmallPtrSet.h
+llvm/Support/MathExtras.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/Support/MathExtras.h
+cstdlib
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/SmallVector.cpp
+llvm/ADT/SmallVector.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/SmallVector.h
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/StringMap.cpp
+llvm/ADT/StringMap.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/StringMap.h
+llvm/ADT/StringExtras.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/StringExtras.h
+cassert
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/StringRef.cpp
+llvm/ADT/StringRef.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/StringRef.h
+llvm/ADT/APInt.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/APInt.h
+llvm/ADT/OwningPtr.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/OwningPtr.h
+bitset
+-
+
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/Twine.cpp
+llvm/ADT/Twine.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/Twine.h
+llvm/ADT/SmallString.h
+/home/jason/Desktop/Dropbox/fall2014/Scalable Machine Learning/hw5/Galois-2.2.1/src/llvm/llvm/ADT/SmallString.h
+sstream
+-
+
+include/llvm/Support/DataTypes.h
+cmath
+-
+math.h
+-
+sys/types.h
+-
+inttypes.h
+-
+stdint.h
+-
+llvm/Support/AIXDataTypesFix.h
+include/llvm/Support/llvm/Support/AIXDataTypesFix.h
+stdlib.h
+-
+stddef.h
+-
+sys/types.h
+-
+cmath
+-
+math.h
+-
+

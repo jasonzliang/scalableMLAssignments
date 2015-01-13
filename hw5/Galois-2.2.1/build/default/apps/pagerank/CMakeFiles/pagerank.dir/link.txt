@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -march=native -std=c++11 -O3 -DNDEBUG    CMakeFiles/pagerank.dir/PageRank.cpp.o  -o pagerank -rdynamic ../../src/libgalois.a -lpthread 
